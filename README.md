@@ -11,11 +11,11 @@ Link to the subject : https://forum.babylonjs.com/t/enginestore-lastcreatedengin
 
 2. Make 'core-library' available as a local package with 'npm link'  
 `cd 37492-Babylonjs-bug-repro-core-library`  
-`npm link`
+`npm link` (you may need to run it with sudo)
 
 3. Install 'core-library' in 'main-app' project with npm-link  
 `cd ../37492-babylonjs-bug-repro-main-app`  
-`npm link 37492-Babylonjs-bug-repro-core-library`  
+`npm link 37492-babylonjs-bug-repro-core-library`  
 :warning: any new `npm install` will break the link and you will need to run this command again.
 
 ### Run the project
