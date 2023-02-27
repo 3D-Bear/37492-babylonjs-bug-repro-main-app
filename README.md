@@ -26,6 +26,12 @@ Link to the subject : https://forum.babylonjs.com/t/enginestore-lastcreatedengin
 ### Encounter the bug to reproduce
 1. To make the 'Invalid engine' error appear, you need to uncomment the two commented lines (11 - 12) in main-app-index.ts and rebuild the project.
 
-2. To rebuild the project, just run `npx webpack` in 'main-app' folder
+2. To rebuild the project, run :  
+ `npm install` in 'core-library' folder  
+ `npm install` in 'main-app' folder   
+ (you may need to run `npm link 37492-babylonjs-bug-repro-core-library` again)  
+ `npx webpack` in 'main-app' folder  
+ 
+ The 'Invalid engine' error should then pop before the scene is rendered.
 
 3. (Optional) if you need to make modifications in 'core-library' project, you can run `npx tsc` in 'core-library' project
